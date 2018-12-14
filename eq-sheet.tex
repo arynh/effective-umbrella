@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[margin=0.25in]{geometry}
+\usepackage{pdfpages}
 
 \newcommand*{\Perm}[2]{{}^{#1}\!P_{#2}}%
 \newcommand*{\Comb}[2]{{}^{#1}C_{#2}}%
@@ -140,6 +141,6 @@ When the population distribution is normal, use the ($n-1$) version unless you n
 \textbf{Confidence Interval for Standard Deviation:} Use $a$ and $b$ from above, and just square root the expressions for the variance C.I.\\
 \textbf{Confidence Interval for Proportions (and Wilcox Interval for large $n$):} Let $\hat{p} = \frac{Y}{n}$. Then $\hat{p} \pm z_{\frac{\alpha}{2}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$. Lower bound: $\left[ \hat{p} - z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, 1 \right]$. Upper bound: $\left[ 0, \hat{p} + z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \right]$.\\
 
-
+\includepdf[pages={1-},scale=1.0]{gdoc.pdf}
 
 \end{document}
