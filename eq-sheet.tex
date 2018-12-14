@@ -134,7 +134,8 @@ Lower & $\left[ \overline{X} - z_{\alpha} \frac{\sigma}{\sqrt{n}}, \infty \right
 Upper & $\left( -\infty, \overline{X} + z_{\alpha} \frac{\sigma}{\sqrt{n}} \right]$ & figure it out \\
 \end{tabular}\\
 \normalsize
-$S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$ be the sample variance.\\
+$S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$ be the sample variance. 
+When the population distribution is normal, use the ($n-1$) version unless you need to use MLE for which the ($n$) version is needed. For other distributions, use the ($n$) version. If no distribution is mentioned, then assume it to be normal and use the ($n-1$) version.\\
 \textbf{Confidence Interval for Variance:} $\left[ \frac{(n-1)S^2}{b}, \frac{(n-1)S^2}{a} \right], a=\chi_{1-\frac{\alpha}{2}}^2(n-1), b=\chi_{\frac{\alpha}{2}}^2(n-1)$.\\
 \textbf{Confidence Interval for Standard Deviation:} Use $a$ and $b$ from above, and just square root the expressions for the variance C.I.\\
 \textbf{Confidence Interval for Proportions (and Wilcox Interval for large $n$):} Let $\hat{p} = \frac{Y}{n}$. Then $\hat{p} \pm z_{\frac{\alpha}{2}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$. Lower bound: $\left[ \hat{p} - z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, 1 \right]$. Upper bound: $\left[ 0, \hat{p} + z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \right]$.\\
