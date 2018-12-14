@@ -117,6 +117,14 @@ Variance& $\lambda$  & $\sigma^2$
 \textbf{Sample Mean:} $\frac{1}{n}\sum_{i=1}^{n}X_i \equiv \overline{X}$.\\
 \textbf{Sample Variance:} For $z$ distribution: $\frac{1}{n}\sum_{i=1}^{n}(X_i - \overline{X})^2$, and for $t$ distribution: $\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$.\\
 \textbf{Method of Moments Estimator:} Construct a system of equations using moments and sample data. For example, equate theoretical mean with sample mean, and theoretical variance with sample variance, then solve. \texttt{<><><maybe put an example here<><>><}\\
+\textbf{Helpful Distribution Values:}\\
+\begin{tabular}{ll}
+$\alpha$ & $z_{1-\alpha}$ \\
+0.2      & 0.840 \\
+0.1      & 1.280 \\
+0.05     & 1.645 \\
+0.025    & 1.960 \\
+\end{tabular}\\
 \textbf{Confidence Intervals for Means:}\\
 \tiny
 \begin{tabular}{rcc}
@@ -126,15 +134,11 @@ Lower & $\left[ \overline{X} - z_{\alpha} \frac{\sigma}{\sqrt{n}}, \infty \right
 Upper & $\left( -\infty, \overline{X} + z_{\alpha} \frac{\sigma}{\sqrt{n}} \right]$ & figure it out \\
 \end{tabular}\\
 \normalsize
-$S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$ be the sample variance.
-\textbf{Confidence Interval for Variance:} $\left[ \frac{(n-1)S^2}{b}, \frac{(n-1)S^2}{a} \right], a=\chi_{1-\frac{\alpha}{2}}^2(n-1), b=a=\chi_{\frac{\alpha}{2}}^2(n-1)$.\\
-\textbf{Helpful Distribution Values:}\\
-\begin{tabular}{ll}
-$\alpha$ & $z_{1-\alpha}$ \\
-0.2      & 0.840 \\
-0.1      & 1.280 \\
-0.05     & 1.645 \\
-0.025    & 1.960 \\
-\end{tabular}\\
+$S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$ be the sample variance.\\
+\textbf{Confidence Interval for Variance:} $\left[ \frac{(n-1)S^2}{b}, \frac{(n-1)S^2}{a} \right], a=\chi_{1-\frac{\alpha}{2}}^2(n-1), b=\chi_{\frac{\alpha}{2}}^2(n-1)$.\\
+\textbf{Confidence Interval for Standard Deviation:} Use $a$ and $b$ from above, and just square root the expressions for the variance C.I.\\
+\textbf{Confidence Interval for Proportions (and Wilcox Interval for large $n$):} Let $\hat{p} = \frac{Y}{n}$. Then $\hat{p} \pm z_{\frac{\alpha}{2}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$. Lower bound: $\left[ \hat{p} - z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, 1 \right]$. Upper bound: $\left[ 0, \hat{p} + z_{\alpha} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \right]$.\\
+
+
 
 \end{document}
